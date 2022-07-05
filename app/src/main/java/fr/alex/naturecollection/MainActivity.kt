@@ -23,21 +23,19 @@ class MainActivity : AppCompatActivity() {
             {
                 R.id.home_page -> {
                     loadFragment(HomeFragment(this), R.string.home_page_title)
-                    return@setOnNavigationItemReselectedListener true
+                    return@setOnNavigationItemReselectedListener
                 }
                 R.id.collection_page -> {
                     loadFragment(CollectionFragment(this), R.string.collection_page_title)
-                    return@setOnNavigationItemReselectedListener true
+                    return@setOnNavigationItemReselectedListener
                 }
                 R.id.add_plant_page -> {
                     loadFragment(AddPlantFragment(this), R.string.add_plant_page_title)
-                    return@setOnNavigationItemReselectedListener true
+                    return@setOnNavigationItemReselectedListener
                 }
                 else -> false
             }
         }
-
-        loadFragment(HomeFragment(this))
     }
 
     private fun loadFragment(fragment: Fragment, string: Int) {

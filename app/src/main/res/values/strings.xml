@@ -47,6 +47,7 @@
     <!-- Plante customise -->
     <string name="item_plant_name">Nom de la plante</string>
     <string name="item_plant_description">Description de la plante</string>
+    <string name="bottom_add_plant_item">Ajouter une plante</string>
 
 
 </resources>

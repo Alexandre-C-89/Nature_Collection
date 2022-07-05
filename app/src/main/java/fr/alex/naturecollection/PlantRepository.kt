@@ -72,7 +72,7 @@ class PlantRepository {
             val uploadTask = ref.putFile(file)
 
             // Démarrer la tâche d'envoi
-            uploadTask.continueWithTask(Continuation<UploadTask.TaskSnapshot, Task<URI>> { task ->
+            uploadTask.continueWithTask(Continuation<UploadTask.TaskSnapshot, Task<Uri>> { task ->
 
                 // si il y a eu un poblème lors de l'envoi du fichier
                 if(!task.isSuccessful) {
